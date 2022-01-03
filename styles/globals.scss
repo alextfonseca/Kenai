@@ -1,9 +1,51 @@
-html,
-body {
-  padding: 0;
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --yellow: #ffa634;
+
+  --gradient-default-light: #ffa634;
+  --gradient-default-dark: #ff267a;
+
+  --white: #f9f9f9;
+
+  --gray: #a8a8a8;
+  --gray-dark: #181818;
+
+  --dark: #121214;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; //15px
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%; //14px
+  }
+}
+
+body {
+  background: var(--dark);
+  color: var(--white);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Open Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
@@ -11,6 +53,9 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.bodyLoading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }

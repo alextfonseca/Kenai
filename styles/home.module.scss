@@ -1,0 +1,49 @@
+.body {
+  height: 100%;
+  width: 100%;
+
+  background-image: url("../public/images/backgroundImage.png");
+  background-size: cover;
+  background-position: center;
+
+  header {
+    .container {
+      width: min(90%, 1120rem);
+      margin: auto;
+
+      padding: 2rem 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-family: "Mukta", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        background: -webkit-linear-gradient(
+          var(--gradient-default-light),
+          var(--gradient-default-dark)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      nav ul {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        li {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  main {
+    width: min(90%, 1120rem);
+    margin: auto;
+  }
+}
