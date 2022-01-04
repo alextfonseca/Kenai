@@ -1,0 +1,29 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  cursor: pointer;
+
+  transition: filter 0.3s;
+
+  &:hover {
+    filter: brightness(0.5);
+  }
+
+  div {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: linear-gradient(
+      var(--gradient-default-light),
+      var(--gradient-default-dark)
+    );
+  }
+
+  span {
+    font-size: 1.275rem;
+    font-weight: 400;
+  }
+}

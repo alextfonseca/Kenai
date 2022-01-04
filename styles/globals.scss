@@ -59,3 +59,20 @@ a {
   justify-content: center;
   height: 100vh;
 }
+
+// scroll style
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    var(--gradient-default-light),
+    var(--gradient-default-dark)
+  );
+  border-radius: 0.5rem;
+}

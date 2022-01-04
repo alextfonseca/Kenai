@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  cursor: pointer;
+
+  transition: filter 0.3s;
+
+  &:hover {
+    filter: brightness(0.5);
+  }
+
+  .filmInfo {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    bottom: 2rem;
+    left: 1rem;
+
+    span {
+      width: 90px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .filmPhoto {
+      opacity: 0.8;
+    }
+  }
+}

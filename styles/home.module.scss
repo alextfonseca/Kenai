@@ -35,8 +35,20 @@
         gap: 5rem;
 
         li {
+          position: relative;
+
           font-size: 1.5rem;
           font-weight: 600;
+
+          cursor: pointer;
+
+          a {
+            transition: filter 0.3s;
+
+            &:hover {
+              filter: brightness(0.7);
+            }
+          }
         }
       }
     }
@@ -44,6 +56,140 @@
 
   main {
     width: min(90%, 1120rem);
+    margin: 2rem auto;
+
+    span {
+      color: var(--yellow);
+      background: var(--gray-dark);
+      padding: 0.5rem;
+      border-radius: 0 0.5rem 0 0.5rem;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      margin-top: 2rem;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        p {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-top: 2rem;
+      font-weight: 600;
+    }
+
+    .about {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 40%;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+
+      background: var(--yellow);
+      padding: 1rem 3rem;
+
+      color: var(--dark);
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      border-radius: 0.5rem;
+
+      transition: filter 0.3s;
+
+      &:hover {
+        filter: brightness(0.7);
+      }
+    }
+
+    .popularMoviesList {
+      margin-top: 5rem;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+
+        &::after {
+          content: "";
+          display: block;
+          background: var(--yellow);
+          height: 4px;
+          width: 70px;
+          margin-top: 0.25rem;
+        }
+      }
+
+      .filmCardList {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  footer {
+    width: min(90%, 1120rem);
     margin: auto;
+
+    padding: 2rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-family: "Mukta", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+}
+
+.MenuAccount {
+  position: absolute;
+  right: -2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--gray-dark);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+
+  &:hover {
+    filter: none;
+  }
+
+  a {
+    font-size: 1.25rem;
+    font-weight: 300;
+
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 }

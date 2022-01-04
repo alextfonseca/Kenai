@@ -11,6 +11,11 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&family=Open+Sans:wght@300;400;600&display=swap"
             rel="stylesheet"
           />
+
+          <meta
+            name="description"
+            content="Kenai é um streaming de filme proposto como desafio na comunidade Codelândia, projeto desenvolvido utilizando Next.js e Typescript para o front-end."
+          />
         </Head>
 
         <body>
