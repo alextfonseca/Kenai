@@ -39,6 +39,9 @@ $ yarn dev / npm dev
 $ cd backend
 $ yarn dev
 ```
+## 🧾 Usando o projeto
+
+# <a href="https://kenai-mu.vercel.app/">Acesse o projeto</a>
 
 ## 🧑‍💻 Criador
 
